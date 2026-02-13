@@ -6,6 +6,9 @@
 int main(){
     int n1, n2, d1, d2;
     printf("Inserire i numeratore dei due numeri razionali!");
-    scanf("%d" "%d", &n1 , &n2);
+    scanf("%d %d", &n1 , &n2);
+    printf("Inserire i denominatore dei numeri razionali!");
+    scanf("%d %d", &d1 , &d2);
+    
     return 0;
 }
