@@ -7,4 +7,5 @@ int main(){
     ore = numero/60;
     minuti = (numero % 60);
     printf("%d h, %d m", ore, minuti);
+    return 0;
 }
