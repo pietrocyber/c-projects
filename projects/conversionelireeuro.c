@@ -8,6 +8,6 @@ int main(){
     scanf("%lf", &lire);
     conversione=lire/tassoconversione;
     arrotondamento=ceil(conversione*100)/100;
-    printf("L'importo in euro è: %lf", arrotondamento);
+    printf("L'importo in euro è: %.2lf", arrotondamento);
     return 0;
 }
