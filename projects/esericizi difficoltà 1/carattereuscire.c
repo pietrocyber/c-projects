@@ -3,11 +3,11 @@
 
 int main(){
     
-    int n, cifrainv, inv=0, cifra, i, j, c;
+    int n, cifrainv, inv=0, cifra, j;
     
     printf("Inserisci i numeri: ");
     
-    for(i=0;scanf("%d", &n)==1;i++){
+    while(scanf("%d", &n)==1){
 
         for(j=0;n!=0;j++){
             cifra=n%10;
