@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main(){
     
-    int i, n, cifra, j, cifrainv, inv=0 ;
+    int i, n, cifra, j, cifrainv, inv=0, pot=1 ;
     
     printf("Inserisci un numero:");
     scanf("%d", &n);
@@ -10,6 +10,7 @@ int main(){
     for(i=0;n!=0;i++){
         cifra=n%10;
         inv=inv*10+cifra;
+        pot*=10;
         n=n/10;
     }
     
