@@ -13,9 +13,9 @@ int main(){
     printf("Quanti elementi vuoi inserire? ");
     scanf("%d", &n);
 
-    a=malloc(n*sizeof(int));
-    b=malloc(n*sizeof(int));
-    c=malloc(n*sizeof(int));
+    a=(int*)malloc(n*sizeof(int));
+    b=(int*)malloc(n*sizeof(int));
+    c=(int*)malloc(n*sizeof(int));
 
     printf("Inserisci gli elementi: ");
     for(i=0;i<n;i++){
