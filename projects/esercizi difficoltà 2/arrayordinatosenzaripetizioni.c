@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void insertionsort(int *, int, int );
-void shiftsinistra(int *, int);
+void bubblesort(int *, int );
+
 int main(){
-    int *a, n, rp, i, k;
+    int *a, rp, i, k;
     
     printf("Quanti numeri vuoi immettere? ");
     scanf("%d", &rp);
@@ -14,10 +14,11 @@ int main(){
 
     printf("Immettere i seguenti numeri:\n ");
     for(i=0;i<rp; i++){
-        scanf(" %d", &n);
-
-        insertionsort(a, i, n );
+        scanf(" %d", &a[i]);
     }
+
+    bubblesort(a,rp);
+
      printf("I numeri ordinati sono: \n%d\n",a[0]);
 
     for(k=1;k<rp;k++){
@@ -29,19 +30,17 @@ int main(){
     free(a);
     return 0;
 }
-void insertionsort(int *x, int z, int v){
-    int j;
-    for(j=z-1; j>=0 && x[j]>v;j--){
-        x[j+1]=x[j];
-    }
-    x[j+1]=v;
-
-}
-void shiftsinistra(int *x, int y){
+void bubblesort(int *x, int y){
     int i;
-    int primo= x[0];
-    for(i=0; i<y-1; i++){
-        x[i]=x[i+1];
+    int j;
+    int temp;
+    for(i=0; i<y-1;i++){
+        for(j=0; j<y-i-1;j++){
+            if(x[j]>x[j+1]){
+                temp=x[j];
+                x[j]=x[j+1];
+                x[j+1]=temp;
+            }
+        }
     }
-    x[y-1]=primo;
 }
