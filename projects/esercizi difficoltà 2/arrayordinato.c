@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 int main(){
-    int *a,rp, num, i, j;
+    int *a,rp, i, j, temp;
     
     printf("Quanti numeri vuoi inserire? ");
     scanf("%d", &rp);
@@ -12,13 +12,19 @@ int main(){
     
     printf("Inserisci i numeri: ");
     for(i=0; i<rp; i++){
-        scanf("%d", &num);
-        
-        for(j=i-1; (j>=0 && a[j]>num);j--){
-            a[j+1]=a[j];
-        }
-        a[j+1]=num;
+        scanf("%d", &a[i]);
     }
+        
+    for(i=0; i<rp-1;i++){
+        for(j=0; j<rp-i-1; j++){
+            if(a[j]>a[j+1]){
+                temp=a[j];
+                a[j]=a[j+1];
+                a[j+1]=temp;
+            }
+        }
+    }
+    
     for(i=0;i<rp;i++){
         printf("%d ", a[i]);
     }
