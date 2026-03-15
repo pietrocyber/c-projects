@@ -18,7 +18,7 @@ int main(){
         scanf("%d", &a[i]);
     }
 
-    printf("In che posizione vuoi inserire gli elementi?(da 0 a %d)", rp-1);
+    printf("In che posizione vuoi inserire gli elementi?(da 0 a %d): ", rp-1);
     scanf("%d", &pos);
     
     printf("Quanti elementi vuoi inserire nella posizione data (posizione attuale data: %d):\n", pos);
