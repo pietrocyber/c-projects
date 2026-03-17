@@ -10,12 +10,11 @@ int main(){
 
     printf("Quanto lunga può essere la stringa: ");
     scanf("%d", &rp);
-    getchar();
     
     a=(char*)malloc((rp+1)*sizeof(char));
 
     printf("Inserisci la stringa:\n");
-    fgets(a,rp, stdin);
+    scanf(" %s", a);
 
     printf("Quale carattere vuoi eliminare: ");
     scanf(" %c", &c);
