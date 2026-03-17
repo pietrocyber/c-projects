@@ -10,7 +10,7 @@ int main(){
     s=(char*)malloc(1000*sizeof(char));
 
     printf("Inserisci una stringa: ");
-    fgets(s, 1000, stdin);
+    scanf("%s", s);
 
     printf("Inserire il carattere da cercare: ");
     scanf(" %c", &c);
