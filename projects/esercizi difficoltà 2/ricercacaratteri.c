@@ -29,7 +29,7 @@ int search(char *x, char *y){
 
     for(i = 0;  x[i] != '\n'; i++){
         if(x[i] == y[0]){
-            for(j = 0; y[j] != '\0' && x[i+j] != '\n' && x[i+j] == y[j]; j++);
+            for(j = 0; x[j+i]!='\n'&&y[j]!='\n' && x[j+i]==y[j]&&y[j]!='\0'; j++);
 
             if(y[j] == '\0'){ 
                 return 1;
