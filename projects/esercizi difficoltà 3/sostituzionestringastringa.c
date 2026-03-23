@@ -22,7 +22,7 @@ int main(){
 
     pos= search(a,b);
     
-    if(pos!=1){
+    if(pos!=-1){
         printf("Inserisci la frase/parola con cui sostituire la frase/parola trovata: ");
         fgets(c,CD,stdin);
     
@@ -49,7 +49,7 @@ int search(char *x, char *y){
             }
         }
     }
-    return 1;
+    return -1;
 }
 
 void sostituzione( char *x, char *y, char *z, int w){
