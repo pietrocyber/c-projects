@@ -7,7 +7,7 @@
 int main(){
     int i,j,k,z,vista,cn;
     const int CD=100;
-    char token[CD][CD], c;
+    char token[CD][CD];
 
     printf("Inserisci i token: ");
     for(i=0;(scanf("%s", token[i]))!=EOF;i++);
