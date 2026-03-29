@@ -5,7 +5,7 @@
 #include <string.h>
 
 const int CD = 100;
-void bubblesort(char x[][CD], int n);
+void bubblesort(char [][CD], int );
 
 int main(){
     char linea[CD];
