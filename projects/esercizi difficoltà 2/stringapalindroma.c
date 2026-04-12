@@ -18,7 +18,7 @@ int main(){
     rp=i;
 
     for(j=0;s[j]!='\0';j++){
-        if(s[j]==s[rp-1]){
+        if(s[j]==s[rp-1-i]){
             trovato=1;
         }
     }
