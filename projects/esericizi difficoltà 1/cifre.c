@@ -10,7 +10,6 @@ int main(){
     for(i=0;n!=0;i++){
         cifra=n%10;
         inv=inv*10+cifra;
-        pot*=10;
         n=n/10;
     }
     
